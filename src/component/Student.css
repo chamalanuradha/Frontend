@@ -1,0 +1,51 @@
+.Student_list{
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20%; 
+    padding: 10px 60px 0px 60px;
+    display: flex;
+    flex-direction:column;
+}
+.Student_list li{
+    padding: 10px;
+}
+.buttons{
+    float: right;
+    display: flex;
+}
+.edit{
+background-color: #4CAF50;
+border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 6px 20px;
+  text-align: center; 
+  display: inline-block; 
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.delete{
+    background-color: #e03838;
+    border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 6px 20px;
+  text-align: center; 
+  display: inline-block; 
+  font-size: 16px;
+  cursor: pointer;
+}
+.Add{
+  background-color: #1e54d1;
+  width: 10%;
+  margin-left: 80%;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 6px 20px;
+  text-align: center; 
+  display: inline-block; 
+  font-size: 16px;
+  cursor: pointer;
+}
