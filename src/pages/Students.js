@@ -12,7 +12,7 @@ import SearchBox from '../component/SerachBox';
     const [loading,setLoading]=useState(false);
     const [currentpage,setCurrentpage]=useState(1);
     const [studentPerPage]=useState(4);
-    const [setSearchTerm] = useState('');
+   
 
     useEffect(()=>{
         const fetchStudents = async () =>{
@@ -29,13 +29,10 @@ const indexOfFirstStudent = indexOfLastStudents-studentPerPage;
 const currentStudents = students.slice(indexOfFirstStudent,indexOfLastStudents);
 
 const paginate = pageNumber => setCurrentpage(pageNumber);
-function handleSearchTermChange(event) {
-  setSearchTerm(event.target.value);
-}
   return (
     <div>
         <Header/> 
-        <SearchBox onChange={handleSearchTermChange} />
+        <SearchBox />
         <Stu students={currentStudents} loading={loading} />   
         <Pagination studentPerPage={studentPerPage} totalStudents={students.length} paginate={paginate}/>
     </div>

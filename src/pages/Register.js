@@ -21,16 +21,6 @@ function Register(){
 			<label for="phone">Phone:</label>
 			<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required/>
 
-			<label for="dob">Date of Birth:</label>
-			<input type="date" id="dob" name="dob" required/>
-
-			<label for="gender">Gender:</label>
-			<select id="gender" name="gender" required>
-				<option value="" selected disabled hidden>Select your gender</option>
-				<option value="male">Male</option>
-				<option value="female">Female</option>
-				<option value="other">Other</option>
-			</select>
 			<label for="name">Programme:</label>
 			<input type="text" id="name" name="name" placeholder="Enter your programme name" required/>
 
