@@ -8,7 +8,7 @@ const Pagination = ({ studentPerPage, totalStudents, paginate, currentPage }) =>
   }
 
   return (
-    <nav>
+    <nav className='pagi'>
       <ul className='pagination'>
         {pageNumbers.map(number => (
           <li key={number} className={currentPage === number ? 'page-item active' : 'page-item'}>
